@@ -1,0 +1,115 @@
+@use 'header';
+@use 'hero';
+@use 'about-me';
+@use 'projects';
+@use 'var' as *;
+@use 'sass:color';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    
+    font-family: "Montserrat", sans-serif;
+}
+
+@font-face {
+    font-family: Exon;
+    src: url(../../assets/Exon\ Regular.otf);
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1366px;
+    width: 100%;
+}
+
+
+body{
+    background-color: $colorPrimary;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: $colorText;
+}
+
+@mixin title($fontSize: 40px) {
+    @include text(font-size);
+    color: $colorText;
+}
+
+.text--big {
+    @include text(18px);
+
+    @media (max-width:768px) {
+        @include text(15px)
+    }
+}
+
+.text {
+    @include text;
+    @media (max-width:768px) {
+        @include text(14px)
+    }
+}
+
+.text--small {
+    @include text(12px);
+
+    @media (max-width:768px) {
+        @include text(11px)
+    }
+}
+
+.title--big {
+    @include title(44px);
+    @media (max-width:768px) {
+        @include title(26px)
+    }
+}
+
+.title {
+    @include title;
+
+    @media (max-width:768px) {
+        @include title(24px)
+    }
+}
+
+.title--small {
+    @include title(28px);
+    @media (max-width:768px) {
+        @include title(22px);
+    }
+}
+
+.link-text {
+    @include text(18px);
+    color: $colorText;
+    text-decoration: underline;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: $colorText;
+    background-color: $colorTertiary;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 8px;
+    letter-spacing: 1px;
+    border: 1px solid $colorTertiary;
+
+    &:hover{
+        &:hover {
+            background-color:  color.scale($colorTertiary, $lightness: 3%);
+        }
+    }
+}

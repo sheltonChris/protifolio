@@ -1,0 +1,17 @@
+.hero{
+    padding: 6vw;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__text{
+        margin-bottom: 15px;
+    }
+
+    &__img{
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+    }
+}

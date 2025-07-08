@@ -1,0 +1,44 @@
+@use 'var' as *;
+
+@font-face {
+    font-family: Exon;
+    src: url(../../assets/Exon\ Regular.otf);
+    font-weight: 400;
+}
+
+.header {
+    background-color: $colorPrimary;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    overflow: hidden;
+
+    &__logo {
+        height: 90px;
+    }
+
+    .container {
+    display: flex;
+    align-items: center;
+}
+}
+
+
+
+.nav-bar {
+    margin-left: 200px;
+
+    &__list {
+        display: inline-flex;
+
+        &__item {
+            padding: 18px;
+        }
+    }
+
+    &__link {
+        font-family: Exon, sans-serif;
+        font-size: 30px;
+        text-decoration: none;
+    }
+}
