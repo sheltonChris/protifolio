@@ -17,7 +17,7 @@
     <header class="header">
         <div class="container">
             <h1><img class="header__logo" src="./build/images/_LOGOSHELTON.png" alt="Logo"></h1>
-            <div class="nav-bar">
+            <nav class="nav-bar">
                 <ul class="nav-bar__list">
                     <li class="nav-bar__list__item nav-bar__list__item--is-active">
                         <a class="nav-bar__link  title--big" href="#home">Home</a>
@@ -26,15 +26,21 @@
                         <a class="nav-bar__link title--big" href="#about-me">Sobre Mim</a>
                     </li>
                     <li class="nav-bar__list__item">
-                        <a class="nav-bar__link title--big" href="#projects">Projetos</a>
-                    </li>
-                    <li class="nav-bar__list__item">
                         <a class="nav-bar__link title--big" href="#knowledge">Habilidades</a>
                     </li>
+                    <li class="nav-bar__list__item">
+                        <a class="nav-bar__link title--big" href="#projects">Projetos</a>
+                    </li>
+
                     <li class="nav-bar__list__item">
                         <a class="nav-bar__link title--big" href="#contacts">Contato</a>
                     </li>
                 </ul>
+            </nav>
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </header>
@@ -50,6 +56,7 @@
     <section id="about-me" class="section about-me">
         <h2 class="title about-me__title">Sobre Mim</h2>
         <div class="container">
+            <img class="about-me__img" src="build/images/foto.jpg" alt="Minha foto">
             <div>
                 <p class="text--big about-me__text">
                     Sou Shelton Cristian, estudante de desenvolvimento front-end, apaixonado por tecnologia e design.
@@ -59,7 +66,39 @@
                     reais.
                 </p>
             </div>
-            <img class="hero__img" src="build/images/foto.jpg" alt="Minha foto">
+
+        </div>
+    </section>
+
+    <section id="knowledge" class="section knowledge">
+        <h2 class="knowledge__title title ">Meus Conhecimentos</h2>
+
+        <div class="container">
+            <ul class="knowledge__list">
+                <li class="knowledge__list__item">
+                    <img class="knowledge__img" src="build/images/html-5.svg" alt="html 5">
+                </li>
+                <li class="knowledge__list__item">
+                    <img class="knowledge__img" src="build/images/css-3.svg" alt="css 3">
+                </li>
+                <li class="knowledge__list__item">
+                    <img class="knowledge__img" src="build/images/jquery.svg" alt="jquery">
+                </li>
+                <li class="knowledge__list__item">
+                    <img class="knowledge__img" src="build/images/js.svg" alt="javascript">
+                </li>
+                <li class="knowledge__list__item">
+                    <img class="knowledge__img" src="build/images/bootstrap.svg" alt="bootstrap">
+                </li>
+                <li class="knowledge__list__item">
+                    <img class="knowledge__img" src="build/images/sass.svg" alt="sass">
+                </li>
+                <li class="knowledge__list__item">
+                    <img class="knowledge__img" src="build/images/gulp.svg" alt="gulp">
+                </li>
+
+            </ul>
+
         </div>
     </section>
 
@@ -137,44 +176,14 @@
         </div>
     </section>
 
-    <section id="knowledge" class="section knowledge">
-        <h2 class="knowledge__title title ">Meus Conhecimentos</h2>
 
-        <div class="container">
-            <ul class="knowledge__list">
-                <li class="knowledge__list__item">
-                    <img class="knowledge__img" src="build/images/html-5.svg" alt="html 5">
-                </li>
-                <li class="knowledge__list__item">
-                    <img class="knowledge__img" src="build/images/css-3.svg" alt="css 3">
-                </li>
-                <li class="knowledge__list__item">
-                    <img class="knowledge__img" src="build/images/jquery.svg" alt="jquery">
-                </li>
-                <li class="knowledge__list__item">
-                    <img class="knowledge__img" src="build/images/js.svg" alt="javascript">
-                </li>
-                <li class="knowledge__list__item">
-                    <img class="knowledge__img" src="build/images/bootstrap.svg" alt="bootstrap">
-                </li>
-                <li class="knowledge__list__item">
-                    <img class="knowledge__img" src="build/images/sass.svg" alt="sass">
-                </li>
-                <li class="knowledge__list__item">
-                    <img class="knowledge__img" src="build/images/gulp.svg" alt="gulp">
-                </li>
-
-            </ul>
-
-        </div>
-    </section>
 
     <section id="contacts" class="section contact">
         <h2 class="contact__title title">Vamos transformar ideias em código. <br>
             Fale comigo!</h2>
         <div class="container">
             <div class="contact__form">
-                <form >
+                <form>
                     <div class="contact__form__area">
                         <label for="name">Nome:</label>
                         <input id="name" type="text" placeholder="Nome">

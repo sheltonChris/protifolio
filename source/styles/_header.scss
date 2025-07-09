@@ -16,6 +16,8 @@
     padding: 10px;
     overflow: hidden;
 
+
+
     &__logo {
         height: 90px;
     }
@@ -23,13 +25,18 @@
     .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 }
 
 
 
 .nav-bar {
-    margin-left: 100px;
+    margin-right: 150px;
+
+    @media (max-width:767px){
+        display: none;
+    }
 
     &__list {
         display: inline-flex;
@@ -50,9 +57,24 @@
 
     &__link {
         font-family: Exon, sans-serif;
-        font-size: 30px;
+        font-size: 25px;
         text-decoration: none;
 
         
     }
+}
+
+.menu-hamburguer {
+    visibility: hidden;
+    margin-right: 5px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color:$colorSecundary;
+    display: block;
+    margin-bottom: 4px;
 }

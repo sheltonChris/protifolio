@@ -3,13 +3,16 @@
 .knowledge {
     height: 80vh;
     scroll-margin-top: 100px;
-    padding: 3vw;
-    background-color: $colorSecundary;
+    padding: 6vw;
 
     .container{
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media (max-width:767px){
+            display: block;
+        }
     }
 
     &__title {
@@ -22,12 +25,15 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        // animation: slide 25s linear infinite;
+
+        @media (max-width:767px){
+            display: grid;
+        grid-template-columns: 1fr 1fr;
+        }
 
 
         &__item {
             padding: 20px;
-
 
         }
     }
@@ -35,15 +41,5 @@
     &__img {
 
         height: 120px;
-    }
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(-100%);
     }
 }

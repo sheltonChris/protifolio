@@ -7,14 +7,20 @@
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 767px){
+        margin-bottom: 0;
+    }
+
+
+
     &__title {
         margin-bottom: 15px;
         font-size: 40px;
+
+        @media (max-width:767px){
+            font-size: 30px;
+    }
     }
 
-    &__img {
-        height: 250px;
-        width: 250px;
-        border-radius: 50%;
-    }
+    
 }

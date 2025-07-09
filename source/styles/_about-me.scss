@@ -2,7 +2,6 @@
 
 .about-me {
     height: 75vh;
-
     scroll-margin-top: 100px;
     padding: 6vw;
     background-color: $colorSecundary;
@@ -12,11 +11,34 @@
         align-items: center;
         justify-content: space-evenly;
         gap: 50px;
+
+        @media (max-width:767px){
+            display: block;
+        }
     }
 
     &__title {
         font-size: 40px;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    &__text{
+        @media (max-width: 767px){
+            margin-top: 50px;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+    }
+
+    &__img {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+
+        @media (max-width:767px){
+            display: block;
+            margin: 0 auto;
+        }
     }
 }
