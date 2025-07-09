@@ -5,6 +5,10 @@
     scroll-margin-top: 100px;
     padding: 6vw;
 
+    @media (max-width:767px) {
+        height: 100vh;
+    }
+
     .container{
         display: flex;
         align-items: center;

@@ -6,6 +6,10 @@
     padding: 6vw;
     background-color: $colorSecundary;
 
+    @media (max-width:767px){
+        height: 100vh;
+    }
+
     .container {
         display: flex;
         align-items: center;
