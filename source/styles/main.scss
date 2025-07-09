@@ -2,15 +2,17 @@
 @use 'hero';
 @use 'about-me';
 @use 'projects';
+@use 'knowledge';
+@use 'contact';
 @use 'var' as *;
 @use 'sass:color';
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    
+
     font-family: "Montserrat", sans-serif;
 }
 
@@ -20,13 +22,17 @@
     font-weight: 400;
 }
 
-.container{
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
     max-width: 1366px;
     width: 100%;
 }
 
 
-body{
+body {
     background-color: $colorPrimary;
 }
 
@@ -51,6 +57,7 @@ body{
 
 .text {
     @include text;
+
     @media (max-width:768px) {
         @include text(14px)
     }
@@ -66,6 +73,7 @@ body{
 
 .title--big {
     @include title(44px);
+
     @media (max-width:768px) {
         @include title(26px)
     }
@@ -81,6 +89,7 @@ body{
 
 .title--small {
     @include title(28px);
+
     @media (max-width:768px) {
         @include title(22px);
     }
@@ -106,10 +115,11 @@ body{
     padding: 8px;
     letter-spacing: 1px;
     border: 1px solid $colorTertiary;
+    cursor: pointer;
 
-    &:hover{
+    &:hover {
         &:hover {
-            background-color:  color.scale($colorTertiary, $lightness: 3%);
+            background-color: color.scale($colorTertiary, $lightness: 3%);
         }
     }
 }

@@ -9,7 +9,10 @@
 .header {
     background-color: $colorPrimary;
     position: sticky;
+    position: sticky;
+    left: 0;
     top: 0;
+    z-index: 1;
     padding: 10px;
     overflow: hidden;
 
@@ -26,19 +29,30 @@
 
 
 .nav-bar {
-    margin-left: 200px;
+    margin-left: 100px;
 
     &__list {
         display: inline-flex;
 
         &__item {
             padding: 18px;
+            padding-bottom: 0;
+            border-bottom: 2px solid transparent;
+
+            &--is-active{
+                border-bottom: 2px solid $colorText;
+            }
+
         }
+
+
     }
 
     &__link {
         font-family: Exon, sans-serif;
         font-size: 30px;
         text-decoration: none;
+
+        
     }
 }

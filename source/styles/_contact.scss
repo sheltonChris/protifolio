@@ -1,0 +1,74 @@
+@use 'var' as *;
+@use 'sass:color';
+.contact{
+    padding: 6vw;
+    margin-top: 50px;
+        height: 100vh;
+    scroll-margin-top: 100px;
+
+    .container{
+        display: flex;
+    }
+
+    &__title{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    &__form{
+
+        margin-top: 100px;
+        
+        &__area{
+            margin-bottom: 16px;
+
+            label{
+                display: block;
+                font-weight: bold;
+                color: $colorText;
+                margin-bottom: 10px;
+            }
+            input{
+                width: 100%;
+                display: block;
+                padding: 8px;
+            }
+
+            textarea{
+                width: 100%;
+                display: block;
+                padding: 8px;
+                resize: none;
+                height: 120px;
+                width: 420px;
+            }
+        }
+    }
+
+    &__button{
+        max-width: 220px;
+    }
+}
+
+.social-links{
+    margin: 0 auto;
+
+    &__title{
+        margin-top: 100px;
+        font-size: 30px;
+
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+
+        &__item{
+            padding: 20px;
+        }
+    }
+
+    &__img{
+        height: 50px;
+    }
+}

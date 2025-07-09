@@ -1,8 +1,12 @@
 @use 'var' as *;
 .projects{
+    scroll-margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding: 6vw;
 
     &__title{
+        font-size: 40px;
         text-align: center;
         margin-bottom: 30px;
     }
@@ -10,23 +14,31 @@
     &__list{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 5px;
+        gap: 10px;
 
         &__item{
-            background-color: $colorSecundary;
-            padding: 20px;
+            // background-color: $colorSecundary;
+            border: 1px solid $colorTertiary;
+            padding: 10px;
             border-radius: 5px;
 
 
-            img{
-                height: 180px;
-                border-radius: 5px;
-            }
+            
         }
+
+        
     }
+
+    &__img{
+                height: 200px;
+                width: 100%;
+                border-radius: 5px;
+
+            }
 
     &__text{
         padding-top: 20px;
+        text-align: center;
     }
 
 
