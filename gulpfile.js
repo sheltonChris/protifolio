@@ -23,7 +23,7 @@ function comprimeImagens() {
 }
 
 function comprimeJS() {
-    return gulp.src('./source/scripts/*.js')
+    return gulp.src('./source/scripts/**')
         .pipe(uglify())
         .pipe(obfuscate())
         .pipe(gulp.dest('./build/scripts'))
