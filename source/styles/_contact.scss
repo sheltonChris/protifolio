@@ -3,12 +3,14 @@
 .contact{
     padding: 6vw;
     margin-top: 50px;
+    margin-bottom: 100px;
     height: 100vh;
     scroll-margin-top: 100px;
 
     @media (max-width:767px){
         margin-top: 50px;
     }
+    
     .container{
         display: flex;
 
@@ -64,8 +66,10 @@
 .social-links{
     margin: 0 auto;
 
+
     &__title{
         margin-top: 100px;
+        text-align: center;
         font-size: 30px;
 
     }
