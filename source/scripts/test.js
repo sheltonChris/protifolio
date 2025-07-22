@@ -33,6 +33,9 @@ function getName() {
         })
         .catch(error => {
             console.error('Erro:', error);
-        });
+        })
+        .finally(() => {
+        document.getElementById('form').reset()
+    });
 
 }

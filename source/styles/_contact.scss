@@ -41,12 +41,16 @@
                 width: 100%;
                 display: block;
                 padding: 8px;
+                border-radius: 6px;
+                border: 1px solid transparent;
             }
 
             textarea{
                 width: 100%;
                 display: block;
                 padding: 8px;
+                border-radius: 6px;
+                border: 1px solid transparent;
                 resize: none;
                 height: 120px;
                 width: 420px;
@@ -69,21 +73,29 @@
 
     &__title{
         margin-top: 100px;
-        text-align: center;
         font-size: 30px;
 
     }
 
     &__list{
         display: flex;
-        align-items: center;
 
         &__item{
-            padding: 20px;
+            padding:10px 20px 10px 0;
         }
     }
 
     &__img{
         height: 50px;
+    }
+
+    &__email{
+        display: flex;
+        margin-top: 20px;
+
+        &__img{
+            height: 30px;
+            margin-right: 10px;
+        }
     }
 }
