@@ -4,6 +4,7 @@
     height: 80vh;
     scroll-margin-top: 100px;
     padding: 6vw;
+    margin-bottom: 150px;
 
     @media (max-width:767px) {
         height: 100vh;
@@ -26,9 +27,9 @@
     }
 
     &__list {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
 
         @media (max-width:767px){
             display: grid;
@@ -44,6 +45,10 @@
 
     &__img {
 
-        height: 120px;
+        height: 200px;
+
+        @media (max-width:767px){
+            height: 100px;
+        }
     }
 }

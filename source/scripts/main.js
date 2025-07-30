@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     setTimeout(() => {
                         destino.setAttribute('tabindex', '-1');
                         destino.focus();
-                    }, 500);
+                    }, 1000);
                 }
             }
         }

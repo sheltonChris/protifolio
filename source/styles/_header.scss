@@ -9,11 +9,10 @@
 .header {
     background-color: $colorPrimary;
     position: sticky;
-    position: sticky;
     left: 0;
     top: 0;
     z-index: 1;
-    padding: 10px;
+    padding: 20px;
     overflow: hidden;
 
 
@@ -25,14 +24,13 @@
     .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 }
 
 
 
 .nav-bar {
-    margin-right: 150px;
+    margin-left: 250px;
 
     @media (max-width:767px){
         display: none;
